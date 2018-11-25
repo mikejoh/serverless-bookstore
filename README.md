@@ -11,7 +11,7 @@ See the official Getting Started guide [here](https://www.terraform.io/intro/get
 ## Step-by-step guide
 
 1. [Download](https://www.terraform.io/downloads.html) and [install](https://www.terraform.io/intro/getting-started/install.html) `terraform`
-2. Create a new IAM User (i called the user `terraformer`) and generate access keys. Take a note of the `AccessKeyId` and `SecretAccessKey` fields when you generate the access keys below, you'll need them in step 2:
+2. Create a new IAM User (i called the user `terraformer`) and generate access keys. Take a note of the `AccessKeyId` and `SecretAccessKey` fields when you generate the access keys below, you'll need them in step 3:
 ```
 aws iam create-user --user-name terraformer
 aws iam create-access-keys --user-name terraformer
