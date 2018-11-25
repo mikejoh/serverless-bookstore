@@ -4,13 +4,9 @@ This repository extends [this](https://www.alexedwards.net/blog/serverless-api-w
 
 **If you haven't already make sure you read through and follow the blog post at least once before you begin!**
 
-About Terraform (taken from the official homepage):
-
-_HashiCorp Terraform enables you to safely and predictably create, change, and improve infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned._
-
-See the official Getting Started guide [here](https://www.terraform.io/intro/getting-started/build.html).
-
 ## Step-by-step guide
+
+_Note that this guide uses the `us-east-1` as the AWS region where everything will be created. You can change the region in the `vars.tf` file but remember to also change the region in the `books/db.go` file and the global `db` variable._
 
 1. [Download](https://www.terraform.io/downloads.html) and [install](https://www.terraform.io/intro/getting-started/install.html) `terraform`
 2. Create a new IAM User (i called the user `terraformer`) and generate access keys. Take a note of the `AccessKeyId` and `SecretAccessKey` fields when you generate the access keys below, you'll need them in step 3:
@@ -60,9 +56,15 @@ curl $(terraform output books_rest_api_endpoint)?isbn=978-0141439587
 
 To remove all resource created in AWS you can run `terraform destroy`.
 
-### Terraform CLI commands
+## Terraform
 
-Explanation on the `terraform` commands that we just ran above:
+About Terraform (taken from the official homepage):
+
+_HashiCorp Terraform enables you to safely and predictably create, change, and improve infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned._
+
+See the official Terraform Getting Started guide [here](https://www.terraform.io/intro/getting-started/build.html).
+
+Some words on the `terraform` commands that we ran in the guide above:
 
 `terraform validate`, validates the syntax of the `terraform` configuration files.
 
