@@ -20,7 +20,7 @@ aws iam attach-user-policy --policy-arn arn:aws:iam::aws:policy/AdministratorAcc
 ```
 3. Create a new `awscli` profile and reference the generated access keys (through `stdin`):
 ```
-aws configure --profile terraform
+aws configure --profile terraformer
 ```
 4. Run `make aws-lambda-build` in the `books/` directory to compile a binary and create the needed zip-file. The zip-file must be present when running `terraform` in the next step!
 5. Now run the following `terraform` commands in root of this repository:
