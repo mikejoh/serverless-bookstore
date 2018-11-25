@@ -2,6 +2,8 @@
 
 This repository extends [this](https://www.alexedwards.net/blog/serverless-api-with-go-and-aws-lambda) great blog post written by [Alex Edwards](https://github.com/alexedwards/) by using `terraform` to create the final serverless bookstore example.
 
+**If you haven't already make sure you read through and follow the blog post at least once before you begin!**
+
 About Terraform (taken from the official homepage):
 
 _HashiCorp Terraform enables you to safely and predictably create, change, and improve infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned._
