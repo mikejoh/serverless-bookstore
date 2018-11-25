@@ -24,7 +24,7 @@ aws iam attach-user-policy --policy-arn arn:aws:iam::aws:policy/AdministratorAcc
 ```
 aws configure --profile terraform
 ```
-4. Run `make aws-lambda-build` in the `books/` directory to compile a binary and create the needed zip-file. The zip-file must be present when running `terraform` in a later step!
+4. Run `make aws-lambda-build` in the `books/` directory to compile a binary and create the needed zip-file. The zip-file must be present when running `terraform` in the next step!
 5. Now run the following `terraform` commands in root of this repository:
 ```
 terraform validate
