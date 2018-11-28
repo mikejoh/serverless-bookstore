@@ -56,6 +56,10 @@ curl $(terraform output books_rest_api_endpoint)?isbn=978-0141439587
 
 To remove all resource created in AWS you can run `terraform destroy`.
 
+## Overview
+
+![GET request](https://github.com/mikejoh/serverless-bookstore/blob/master/aws-serverless-bookstore-get.png)
+
 ## Terraform
 
 About Terraform (taken from the official homepage):
