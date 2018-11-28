@@ -59,7 +59,9 @@ To remove all resource created in AWS you can run `terraform destroy`.
 ## Overview (GET request)
 
 <p align="center">
+
 ![GET request](https://github.com/mikejoh/serverless-bookstore/blob/master/aws-serverless-bookstore-get.png)
+
 </p>
 
 ## Terraform
